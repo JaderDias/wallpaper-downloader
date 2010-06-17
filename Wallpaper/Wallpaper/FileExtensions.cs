@@ -7,7 +7,7 @@ namespace Wallpaper
     {
         public static void DeleteAndPreventRedownload(string path)
         {
-            using (var writer = new StreamWriter(Settings.Default.DontDownloadFileName))
+            using (var writer = new StreamWriter(Settings.Default.DontDownloadFileName, true))
             {
                 writer.WriteLine(path);
             }
