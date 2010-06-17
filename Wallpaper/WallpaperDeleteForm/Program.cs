@@ -20,7 +20,7 @@ namespace WallpaperDeleteForm
                 var dialogResult = MessageBox.Show(confirmationMessage, "Wallpaper deletion confirmation", MessageBoxButtons.YesNoCancel);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    FileExtensions.DeleteAndLeavePlaceHolder(path);
+                    FileExtensions.DeleteAndPreventRedownload(path);
                 }
                 else if(dialogResult == DialogResult.No)
                 {

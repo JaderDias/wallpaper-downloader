@@ -21,20 +21,32 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_5D7823939E82345769311F6C02E57955"
+        "MsmKey" = "8:_418AE47FA24CAC94D388C331E3E99533"
         "OwnerKey" = "8:_0290167096F94BFCB2C5A7F77CE2EB61"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_5D7823939E82345769311F6C02E57955"
+        "MsmKey" = "8:_418AE47FA24CAC94D388C331E3E99533"
         "OwnerKey" = "8:_AF9BA5395B324F13A8B0ACD07A03B52C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_5D7823939E82345769311F6C02E57955"
-        "OwnerKey" = "8:_CCAD422ABD8B286D4E5330FC3943A185"
+        "MsmKey" = "8:_649ECABC3A3FA212152779A1D879EF14"
+        "OwnerKey" = "8:_0290167096F94BFCB2C5A7F77CE2EB61"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_649ECABC3A3FA212152779A1D879EF14"
+        "OwnerKey" = "8:_AF9BA5395B324F13A8B0ACD07A03B52C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_649ECABC3A3FA212152779A1D879EF14"
+        "OwnerKey" = "8:_418AE47FA24CAC94D388C331E3E99533"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -45,18 +57,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_CCAD422ABD8B286D4E5330FC3943A185"
-        "OwnerKey" = "8:_0290167096F94BFCB2C5A7F77CE2EB61"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_CCAD422ABD8B286D4E5330FC3943A185"
-        "OwnerKey" = "8:_AF9BA5395B324F13A8B0ACD07A03B52C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_0290167096F94BFCB2C5A7F77CE2EB61"
         "MsmSig" = "8:_UNDEFINED"
@@ -64,19 +64,19 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_418AE47FA24CAC94D388C331E3E99533"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_649ECABC3A3FA212152779A1D879EF14"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_AF9BA5395B324F13A8B0ACD07A03B52C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_CCAD422ABD8B286D4E5330FC3943A185"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_5D7823939E82345769311F6C02E57955"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -232,7 +232,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "Version" = "8:3.5.30729"
+                "FrameworkVersion" = "8:.NETFramework,Version=v4.0"
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=76617"
                 }
@@ -240,20 +240,20 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_5D7823939E82345769311F6C02E57955"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_418AE47FA24CAC94D388C331E3E99533"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:Wallpaper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_5D7823939E82345769311F6C02E57955"
+                    "_418AE47FA24CAC94D388C331E3E99533"
                     {
-                    "Name" = "8:log4net.dll"
+                    "Name" = "8:Wallpaper.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:log4net.dll"
+            "SourcePath" = "8:Wallpaper.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_01BEAAB826F84DAB8ECCF81B79F5BBD2"
@@ -271,20 +271,20 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CCAD422ABD8B286D4E5330FC3943A185"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_649ECABC3A3FA212152779A1D879EF14"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Wallpaper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_CCAD422ABD8B286D4E5330FC3943A185"
+                    "_649ECABC3A3FA212152779A1D879EF14"
                     {
-                    "Name" = "8:Wallpaper.dll"
+                    "Name" = "8:log4net.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:Wallpaper.dll"
+            "SourcePath" = "8:log4net.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_01BEAAB826F84DAB8ECCF81B79F5BBD2"
@@ -371,8 +371,9 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Wallpaper"
         "ProductCode" = "8:{143DBB73-91AE-43C6-A770-185CE497EA80}"
-        "PackageCode" = "8:{84A97F28-8F6D-4C65-A1CA-435011E89DC0}"
+        "PackageCode" = "8:{F14FA61B-4093-4BEC-A333-71BD84BDCA12}"
         "UpgradeCode" = "8:{E922C821-4463-4502-91ED-43E8DCDCF801}"
+        "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"

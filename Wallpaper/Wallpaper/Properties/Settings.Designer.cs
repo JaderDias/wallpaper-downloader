@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WallpaperDeleteForm.Properties {
+namespace Wallpaper.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -20,6 +20,18 @@ namespace WallpaperDeleteForm.Properties {
         public static Settings Default {
             get {
                 return defaultInstance;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("dont-download.txt")]
+        public string DontDownloadFileName {
+            get {
+                return ((string)(this["DontDownloadFileName"]));
+            }
+            set {
+                this["DontDownloadFileName"] = value;
             }
         }
     }

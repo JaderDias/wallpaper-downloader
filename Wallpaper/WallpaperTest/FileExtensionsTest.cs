@@ -74,7 +74,7 @@ namespace TestWallpaperDelete
             {
                 file.WriteLine("test content");
             }
-            FileExtensions.DeleteAndLeavePlaceHolder(path);
+            FileExtensions.DeleteAndPreventRedownload(path);
             Assert.IsFalse(File.Exists(path));
             Assert.IsTrue(File.Exists(path + ".del"));
         }
