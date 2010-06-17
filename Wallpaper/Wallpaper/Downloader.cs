@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Linq;
+using System.IO;
 using System.Net;
 using System.Text.RegularExpressions;
 using log4net;
@@ -40,7 +41,7 @@ namespace Wallpaper
             {
                 var fileName = FilenameGroup.Match(address).Groups[1].Value;
                 fileName = Path.Combine(folder, fileName);
-                if (FileOrPlaceholderExists(fileName))
+                if (ShouldDownload(fileName))
                 {
                     return;
                 }
@@ -73,9 +74,12 @@ namespace Wallpaper
             }
         }
 
-        private bool FileOrPlaceholderExists(string path)
+        private bool ShouldDownload(string path)
         {
-            return FileExists(path) || FileExists(path + ".del");
+            var fileName = Path.GetFileName(path);
+            var dontDownloadFile = Model.GetDontDownloadFilePath();
+            return FileExists(path)
+                && File.ReadAllLines(dontDownloadFile).Any(a => a == fileName);
         }
 
         private bool FileExists(string path)
@@ -107,7 +111,7 @@ namespace Wallpaper
                 {
                     var fileName = filenameGroup.Match(resourceUri).Groups[1].Value;
                     var path = Path.Combine(outputFolder, fileName);
-                    if (!FileOrPlaceholderExists(path))
+                    if (!ShouldDownload(path))
                     {
                         if (!WebClientExtensions.TryDownloadFile(webClient, resourceUri, path, 2))
                         {

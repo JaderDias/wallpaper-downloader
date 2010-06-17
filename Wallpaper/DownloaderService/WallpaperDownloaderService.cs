@@ -33,23 +33,14 @@ namespace DownloaderService
             this.Timer = null;
         }
 
-        public static string GetRegistryValue(string key)
-        {
-            var subkeyLocation = @"Software\HourlyApps";
-            using (var subkey = Registry.LocalMachine.OpenSubKey(subkeyLocation))
-            {
-                return (string)subkey.GetValue(key);
-            }
-        }
-
         protected void TimerCallback(object state)
         {
             if (Monitor.TryEnter(classLock))
             {
                 lock (classLock)
                 {
-                    var resolution = GetRegistryValue("Resolution");
-                    var outputFolder = GetRegistryValue("WallpaperOutputFolder");
+                    var resolution = Model.GetRegistryValue("Resolution");
+                    var outputFolder = Model.GetRegistryValue("WallpaperOutputFolder");
                     Downloader.Instance.DownloadFeeds(resolution, outputFolder);
                     Downloader.Instance.DownloadAPage(resolution, outputFolder, Settings.Default.CurrentPage);
                     Settings.Default.CurrentPage++;

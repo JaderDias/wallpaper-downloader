@@ -14,7 +14,7 @@ namespace MigrationTool
         {
             var outputFolder = WallpaperDownloaderService.GetRegistryValue("WallpaperOutputFolder");
             var files = Directory.EnumerateFiles(outputFolder, "*.del");
-            var dontDownloadFile = Path.Combine(outputFolder, Model.DontDownloadFile);
+            var dontDownloadFile = Model.GetDontDownloadFilePath();
             using (var writer = new StreamWriter(dontDownloadFile, true))
                 foreach (var file in files)
                 {
