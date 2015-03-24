@@ -1,0 +1,1 @@
+Downloads many wallpapers and regularly checks for new ones. Also includes a tool to delete the currently displayed wallpaper in a slideshow.
